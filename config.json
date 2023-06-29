@@ -1,0 +1,5 @@
+{
+    "botFile": "./bot.ts",
+    "commandsDirectory": "./commands",
+    "eventsDirectory": "./events"
+}
