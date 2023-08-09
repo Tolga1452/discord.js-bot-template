@@ -6,6 +6,6 @@ module.exports = {
     ERROR: '**Error while executing {{0}}:** {{1}}',
     OWNER_ONLY: 'This action can only be performed by the owner of the bot!',
     DEVELOPER_ONLY: 'This action can only be performed by the developers of the bot!',
-    INPUT: 'Input',
-    OUTPUT: 'Output'
+    OUTPUT: 'Output',
+    ERROR: 'Error'
 };

@@ -6,6 +6,6 @@ module.exports = {
     ERROR: '**{{0}} çalıştırılırken hata oluştu:** {{1}}',
     OWNER_ONLY: 'Bu eylem yalnızca botun sahibi tarafından gerçekleştirilebilir!',
     DEVELOPER_ONLY: 'Bu eylem yalnızca botun geliştiricileri tarafından gerçekleştirilebilir!',
-    INPUT: 'Girdi',
-    OUTPUT: 'Çıktı'
+    OUTPUT: 'Çıktı',
+    ERROR: 'Hata'
 };
