@@ -2,6 +2,19 @@
 
 This is a template for a Discord bot. It is written in JavaScript and uses the `discord.js` library. It is designed to be easy to use and easy to modify.
 
+## Features
+
+| Feature |
+| --- |
+| ✅ Very easy and simple |
+| ✅ Supports most modern features such as slash commands, message components, modals... |
+| ✅ Localization |
+| ✅ Command Handler |
+| ✅ Built-in commands |
+| ✅ Error handler |
+| ✅ Custom logger |
+| ✅ Custom embeds |
+
 ## Setup
 
 1. Clone this repository.
