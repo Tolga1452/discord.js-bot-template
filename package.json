@@ -1,23 +1,19 @@
 {
   "name": "discord.js-bot-template",
-  "version": "1.0.0",
-  "description": "A very simple bot template for discord.js library. Includes all modern features. Supports JavaScript and TypeScript.",
-  "main": "index.ts",
+  "version": "1.0.0-beta",
+  "description": "",
+  "main": "./src",
   "scripts": {
-    "start": "ts-node ."
+    "start": "node ./src"
   },
   "keywords": [],
-  "author": "Tolga1452",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "@tolga1452/logchu": "^1.0.2",
-    "@types/node": "^20.3.2",
-    "bufferutil": "^4.0.7",
-    "discord.js": "^14.11.0",
-    "dotenv": "^16.3.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.1.5",
-    "utf-8-validate": "^6.0.3",
-    "zlib-sync": "^0.1.8"
+    "@tolga1452/logchu": "^2.0.0",
+    "axios": "^1.4.0",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.3.1"
   }
 }
