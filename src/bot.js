@@ -3,6 +3,7 @@ const { readdirSync } = require('node:fs');
 const { default: axios } = require('axios');
 const logger = require('./modules/logger');
 const { localize } = require('./modules/localization');
+const { ownerId, developerIds } = require('../config');
 
 const client = new Client({
     intents: [
@@ -48,6 +49,22 @@ client.on('interactionCreate', async interaction => {
 
             return interaction.reply({
                 content: localize(interaction.locale, 'NOT_FOUND', 'Command'),
+                ephemeral: true
+            });
+        };
+        if (command.category === 'Owner' && interaction.user.id !== ownerId) {
+            logger('debug', 'COMMAND', 'Command', interaction.commandName, 'blocked for', interaction.user.tag, 'because it is owner only');
+
+            return interaction.reply({
+                content: localize(interaction.locale, 'OWNER_ONLY'),
+                ephemeral: true
+            });
+        };
+        if (command.category === 'Developer' && !developerIds.includes(interaction.user.id)) {
+            logger('debug', 'COMMAND', 'Command', interaction.commandName, 'blocked for', interaction.user.tag, 'because it is developer only');
+
+            return interaction.reply({
+                content: localize(interaction.locale, 'DEVELOPER_ONLY'),
                 ephemeral: true
             });
         };

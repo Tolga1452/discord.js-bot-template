@@ -6,6 +6,9 @@ module.exports = {
     category: 'General',
     data: new SlashCommandBuilder()
         .setName('help')
+        .setNameLocalizations({
+            tr: 'yardım'
+        })
         .setDescription('Shows the help menu')
         .setDescriptionLocalizations({
             tr: 'Yardım menüsünü gösterir'

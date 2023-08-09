@@ -1,5 +1,5 @@
 const { EmbedBuilder, Client } = require("discord.js");
-const { serverId } = require("../../config");
+const { serverId, useServerIconForFooter, ownerId } = require("../../config");
 
 module.exports = class EmbedMaker extends EmbedBuilder {
     /**
@@ -10,8 +10,8 @@ module.exports = class EmbedMaker extends EmbedBuilder {
 
         this.setColor('5865F2');
         this.setFooter({
-            text: 'Made with ❤️ by Discord Experiment Hub',
-            iconURL: client.guilds.cache.get(serverId).iconURL({ forceStatic: true })
+            text: `Made with ❤️ by @${client.users.cache.get(ownerId).tag}`,
+            iconURL: useServerIconForFooter ? client.guilds.cache.get(serverId).iconURL({ forceStatic: true }) : client.user.displayAvatarURL({ forceStatic: true })
         });
     };
 };
