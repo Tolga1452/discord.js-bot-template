@@ -19,7 +19,7 @@ module.exports.localize = (locale, id, ...params) => {
         localized = locales['en-US'][id];
     };
 
-    if (params.length > 0) for (let i = 0; i < params.length; i++) {
+    if (localized) if (params.length > 0) for (let i = 0; i < params.length; i++) {
         localized = localized.replace(`{{${i}}}`, params[i]);
     };
 

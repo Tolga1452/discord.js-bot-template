@@ -64,7 +64,7 @@ We use a custom embed class to make it easier to create embeds. It is similar to
 ```js
 const EmbedMaker = require('../modules/embed.js');
 
-const embed = new EmbedMaker()
+const embed = new EmbedMaker(client) // You can use interaction.client in command files
     .setTitle('Title')
     .setDescription('Description')
 ```
