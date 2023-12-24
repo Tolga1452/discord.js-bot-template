@@ -1,6 +1,6 @@
 {
   "name": "discord.js-bot-template",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "This is a template for a Discord bot. It is written in JavaScript and uses the discord.js library. It is designed to be easy to use and easy to modify.",
   "main": "./src",
   "scripts": {
